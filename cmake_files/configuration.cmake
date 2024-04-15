@@ -4,9 +4,6 @@ set(CMAKE_CUDA_STANDARD 23)
 
 set(CMAKE_BUILD_TYPE DEBUG)
 
-#find_package(CUDA REQUIRED)
-find_package(Boost REQUIRED)
-
 include_directories(include)
 include_directories(${Boost_INCLUDE_DIRS})
 
