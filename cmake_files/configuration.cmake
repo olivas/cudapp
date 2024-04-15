@@ -1,0 +1,15 @@
+
+set(CMAKE_CXX_STANDARD 23)
+set(CMAKE_CUDA_STANDARD 23)
+
+set(CMAKE_BUILD_TYPE DEBUG)
+
+#find_package(CUDA REQUIRED)
+find_package(Boost REQUIRED)
+
+include_directories(include)
+include_directories(${Boost_INCLUDE_DIRS})
+
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
+set(CUDA_PROPAGATE_HOST_FLAGS OFF)
