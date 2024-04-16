@@ -62,4 +62,28 @@ You should see something similar to the following output:
 The first thing you might want to do is see how many NVIDIA cards you have installed and check their properties.
 
 
+#### QUDA
+Notes:
+The installation is a little janky.  You have to install libtensor1 first, otherwise the 
+cuQuantum installer will complain that you don't have an installable version.  This gets you
+unstuck, but to actually run you then need to install libtensor2 otherwise ld will complain
+that it can't find libcutensor.so.2
+
+Running hello_quda:
+
+    cuTensorNet version: 20400
+    ===== device info ======
+    GPU-name:NVIDIA GeForce RTX 3060 Ti
+    GPU-clock:1695000
+    GPU-memoryClock:7001000
+    GPU-nSM:38
+    GPU-major:8
+    GPU-minor:6
+    ========================
+    Included headers and defined data types
+
+Bob's your uncle.
+
+
+
 
