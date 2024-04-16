@@ -149,21 +149,21 @@ cudapp::DeviceProperties::pretty_print() {
          << device_properties.maxGridSize[0] << ","
          << device_properties.maxGridSize[1]
          << ")" << endl;
-    cout << "clockRate= " << device_properties.clockRate << endl;
-    cout << "totalConstMem= " << device_properties.totalConstMem << endl;
-    cout << "major= " << device_properties.major << endl;
-    cout << "minor= " << device_properties.minor << endl;
-    cout << "textureAlignment= " << device_properties.textureAlignment << endl;
-    cout << "texturePitchAlignment= " << device_properties.texturePitchAlignment << endl;
-    cout << "deviceOverlap= " << device_properties.deviceOverlap << endl;
-    cout << "multiProcessorCount= " << device_properties.multiProcessorCount << endl;
-    cout << "kernelExecTimeoutEnabled= " << device_properties.kernelExecTimeoutEnabled << endl;
-    cout << "integrated= " << device_properties.integrated << endl;
-    cout << "canMapHostMemory= " << device_properties.canMapHostMemory << endl;
-    cout << "computeMode= " << device_properties.computeMode << endl;
-    cout << "maxTexture1D= " << device_properties.maxTexture1D << endl;
-    cout << "maxTexture1DMipmap= " << device_properties.maxTexture1DMipmap << endl;
-    cout << "maxTexture1DLinear= " << device_properties.maxTexture1DLinear << endl;
+    cout << "clockRate = " << device_properties.clockRate << endl;
+    cout << "totalConstMem = " << device_properties.totalConstMem << endl;
+    cout << "major = " << device_properties.major << endl;
+    cout << "minor = " << device_properties.minor << endl;
+    cout << "textureAlignment = " << device_properties.textureAlignment << endl;
+    cout << "texturePitchAlignment = " << device_properties.texturePitchAlignment << endl;
+    cout << "deviceOverlap = " << device_properties.deviceOverlap << endl;
+    cout << "multiProcessorCount = " << device_properties.multiProcessorCount << endl;
+    cout << "kernelExecTimeoutEnabled = " << device_properties.kernelExecTimeoutEnabled << endl;
+    cout << "integrated = " << device_properties.integrated << endl;
+    cout << "canMapHostMemory = " << device_properties.canMapHostMemory << endl;
+    cout << "computeMode = " << device_properties.computeMode << endl;
+    cout << "maxTexture1D = " << device_properties.maxTexture1D << endl;
+    cout << "maxTexture1DMipmap = " << device_properties.maxTexture1DMipmap << endl;
+    cout << "maxTexture1DLinear = " << device_properties.maxTexture1DLinear << endl;
     cout << "maxTexture2D = ("
          << device_properties.maxTexture2D[0] << ","
          << device_properties.maxTexture2D[1]
@@ -191,7 +191,7 @@ cudapp::DeviceProperties::pretty_print() {
          << device_properties.maxTexture3DAlt[1] << ","
          << device_properties.maxTexture3DAlt[2]
          << ")" << endl;
-    cout << "maxTextureCubemap= " << device_properties.maxTextureCubemap << endl;
+    cout << "maxTextureCubemap = " << device_properties.maxTextureCubemap << endl;
     cout << "maxTexture1DLayered = ("
          << device_properties.maxTexture1DLayered[0] << ","
          << device_properties.maxTexture1DLayered[1]
@@ -205,7 +205,7 @@ cudapp::DeviceProperties::pretty_print() {
          << device_properties.maxTextureCubemapLayered[0] << ","
          << device_properties.maxTextureCubemapLayered[1]
          << ")" << endl;
-    cout << "maxSurface1D= " << device_properties.maxSurface1D << endl;
+    cout << "maxSurface1D = " << device_properties.maxSurface1D << endl;
     cout << "maxSurface2D = ("
          << device_properties.maxSurface2D[0] << ","
          << device_properties.maxSurface2D[1]
@@ -224,48 +224,48 @@ cudapp::DeviceProperties::pretty_print() {
          << device_properties.maxSurface2DLayered[1] << ","
          << device_properties.maxSurface2DLayered[2]
          << ")" << endl;
-    cout << "maxSurfaceCubemap= " << device_properties.maxSurfaceCubemap << endl;
+    cout << "maxSurfaceCubemap = " << device_properties.maxSurfaceCubemap << endl;
     cout << "maxSurfaceCubemapLayered = ("
          << device_properties.maxSurfaceCubemapLayered[0] << ","
          << device_properties.maxSurfaceCubemapLayered[1]
          << ")" << endl;
-    cout << "surfaceAlignment= " << device_properties.surfaceAlignment << endl;
-    cout << "concurrentKernels= " << device_properties.concurrentKernels << endl;
-    cout << "ECCEnabled= " << device_properties.ECCEnabled << endl;
-    cout << "pciBusID= " << device_properties.pciBusID << endl;
-    cout << "pciDeviceID= " << device_properties.pciDeviceID << endl;
-    cout << "pciDomainID= " << device_properties.pciDomainID << endl;
-    cout << "tccDriver= " << device_properties.tccDriver << endl;
-    cout << "asyncEngineCount= " << device_properties.asyncEngineCount << endl;
-    cout << "unifiedAddressing= " << device_properties.unifiedAddressing << endl;
-    cout << "memoryClockRate= " << device_properties.memoryClockRate << endl;
-    cout << "memoryBusWidth= " << device_properties.memoryBusWidth << endl;
-    cout << "l2CacheSize= " << device_properties.l2CacheSize << endl;
-    cout << "persistingL2CacheMaxSize= " << device_properties.persistingL2CacheMaxSize << endl;
-    cout << "maxThreadsPerMultiProcessor= " << device_properties.maxThreadsPerMultiProcessor << endl;
-    cout << "streamPrioritiesSupported= " << device_properties.streamPrioritiesSupported << endl;
-    cout << "globalL1CacheSupported= " << device_properties.globalL1CacheSupported << endl;
-    cout << "localL1CacheSupported= " << device_properties.localL1CacheSupported << endl;
-    cout << "sharedMemPerMultiprocessor= " << device_properties.sharedMemPerMultiprocessor << endl;
-    cout << "regsPerMultiprocessor= " << device_properties.regsPerMultiprocessor << endl;
-    cout << "managedMemory= " << device_properties.managedMemory << endl;
-    cout << "isMultiGpuBoard= " << device_properties.isMultiGpuBoard << endl;
-    cout << "multiGpuBoardGroupID= " << device_properties.multiGpuBoardGroupID << endl;
-    cout << "singleToDoublePrecisionPerfRatio= " << device_properties.singleToDoublePrecisionPerfRatio
+    cout << "surfaceAlignment = " << device_properties.surfaceAlignment << endl;
+    cout << "concurrentKernels = " << device_properties.concurrentKernels << endl;
+    cout << "ECCEnabled = " << device_properties.ECCEnabled << endl;
+    cout << "pciBusID = " << device_properties.pciBusID << endl;
+    cout << "pciDeviceID = " << device_properties.pciDeviceID << endl;
+    cout << "pciDomainID = " << device_properties.pciDomainID << endl;
+    cout << "tccDriver = " << device_properties.tccDriver << endl;
+    cout << "asyncEngineCount = " << device_properties.asyncEngineCount << endl;
+    cout << "unifiedAddressing = " << device_properties.unifiedAddressing << endl;
+    cout << "memoryClockRate = " << device_properties.memoryClockRate << endl;
+    cout << "memoryBusWidth = " << device_properties.memoryBusWidth << endl;
+    cout << "l2CacheSize = " << device_properties.l2CacheSize << endl;
+    cout << "persistingL2CacheMaxSize = " << device_properties.persistingL2CacheMaxSize << endl;
+    cout << "maxThreadsPerMultiProcessor = " << device_properties.maxThreadsPerMultiProcessor << endl;
+    cout << "streamPrioritiesSupported = " << device_properties.streamPrioritiesSupported << endl;
+    cout << "globalL1CacheSupported = " << device_properties.globalL1CacheSupported << endl;
+    cout << "localL1CacheSupported = " << device_properties.localL1CacheSupported << endl;
+    cout << "sharedMemPerMultiprocessor = " << device_properties.sharedMemPerMultiprocessor << endl;
+    cout << "regsPerMultiprocessor = " << device_properties.regsPerMultiprocessor << endl;
+    cout << "managedMemory = " << device_properties.managedMemory << endl;
+    cout << "isMultiGpuBoard = " << device_properties.isMultiGpuBoard << endl;
+    cout << "multiGpuBoardGroupID = " << device_properties.multiGpuBoardGroupID << endl;
+    cout << "singleToDoublePrecisionPerfRatio = " << device_properties.singleToDoublePrecisionPerfRatio
          << endl;
-    cout << "pageableMemoryAccess= " << device_properties.pageableMemoryAccess << endl;
-    cout << "concurrentManagedAccess= " << device_properties.concurrentManagedAccess << endl;
-    cout << "computePreemptionSupported= " << device_properties.computePreemptionSupported << endl;
-    cout << "canUseHostPointerForRegisteredMem= "
+    cout << "pageableMemoryAccess = " << device_properties.pageableMemoryAccess << endl;
+    cout << "concurrentManagedAccess = " << device_properties.concurrentManagedAccess << endl;
+    cout << "computePreemptionSupported = " << device_properties.computePreemptionSupported << endl;
+    cout << "canUseHostPointerForRegisteredMem = "
          << device_properties.canUseHostPointerForRegisteredMem << endl;
-    cout << "cooperativeLaunch= " << device_properties.cooperativeLaunch << endl;
-    cout << "cooperativeMultiDeviceLaunch= " << device_properties.cooperativeMultiDeviceLaunch
+    cout << "cooperativeLaunch = " << device_properties.cooperativeLaunch << endl;
+    cout << "cooperativeMultiDeviceLaunch = " << device_properties.cooperativeMultiDeviceLaunch
          << endl;
-    cout << "pageableMemoryAccessUsesHostPageTables= "
+    cout << "pageableMemoryAccessUsesHostPageTables = "
          << device_properties.pageableMemoryAccessUsesHostPageTables << endl;
-    cout << "directManagedMemAccessFromHost= " << device_properties.directManagedMemAccessFromHost
+    cout << "directManagedMemAccessFromHost = " << device_properties.directManagedMemAccessFromHost
          << endl;
-    cout << "accessPolicyMaxWindowSize= " << device_properties.accessPolicyMaxWindowSize << endl;
+    cout << "accessPolicyMaxWindowSize = " << device_properties.accessPolicyMaxWindowSize << endl;
 
 }
 
