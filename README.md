@@ -56,3 +56,10 @@ You should see something similar to the following output:
     
     Total Test time (real) =   0.53 sec
 
+### Next Steps
+
+#### The Basics
+The first thing you might want to do is see how many NVIDIA cards you have installed and check their properties.
+
+
+
