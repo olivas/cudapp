@@ -1,20 +1,23 @@
 #include <cudapp/device_manager.hpp>
 #include <cudapp/check_error.cuh>
 
-DeviceManager::DeviceManager()
-{
-  CHECK_ERROR(cudaSetDeviceFlags(cudaDeviceBlockingSync));
-  CHECK_ERROR(cudaSetDevice(device_number_));  
-  std::cerr<<"device_number_ = "<<device_number_<<std::endl;
+using std::optional;
 
-  cudaDeviceProp device_properties;
-  CHECK_ERROR(cudaGetDeviceProperties(&device_properties, device_number_));
-  total_global_mem_ = device_properties.totalGlobalMem;
-  multi_processor_count_ = device_properties.multiProcessorCount;  
+cudapp::DeviceManager::DeviceManager() {}
+
+optional<unsigned>
+cudapp::DeviceManager::device_count() const {
+    int device_count{0};
+    CHECK_ERROR(cudaGetDeviceCount(&device_count));
+    return static_cast<unsigned>(device_count);
 }
 
-DeviceManager::~DeviceManager()
-{  
-  CHECK_ERROR(cudaDeviceReset());
+optional<unsigned>
+cudapp::DeviceManager::current_device() const {
+    int device{0};
+    CHECK_ERROR(cudaGetDevice(&device));
+    return static_cast<unsigned>(device);
 }
+
+cudapp::DeviceManager::~DeviceManager() {}
 

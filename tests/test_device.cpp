@@ -11,6 +11,8 @@
 using std::cerr;
 using std::endl;
 
+using cudapp::Device;
+
 int main(int argc, char *argv[]) {
 
     std::shared_ptr <Device> device(new Device(1));

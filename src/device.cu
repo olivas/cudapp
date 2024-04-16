@@ -1,7 +1,7 @@
 #include <cudapp/device.hpp>
 #include <cudapp/check_error.cuh>
 
-Device::Device(int device_number):
+cudapp::Device::Device(int device_number):
   device_number_(device_number)
 {
   CHECK_ERROR(cudaSetDeviceFlags(cudaDeviceBlockingSync));
@@ -14,7 +14,7 @@ Device::Device(int device_number):
   multi_processor_count_ = device_properties.multiProcessorCount;
 }
 
-Device::~Device()
+cudapp::Device::~Device()
 {  
   CHECK_ERROR(cudaDeviceReset());
 }
